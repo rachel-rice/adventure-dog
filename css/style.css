@@ -1,0 +1,566 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 100%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* .navigation .logo{
+  width: 15%;
+} */
+
+.nav .logo a img{
+  height: 100%;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nav ul li{
+  padding: 0.5rem 1rem;
+}
+
+.nav ul li a, .nav a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav .booking {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/*******************
+hamburger begin
+********************/
+.burg{
+  background-color: white;
+  padding-top: 2%;
+  z-index: 10;
+}
+
+.burg .hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.burg .hamburger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.burg .menu {
+  
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.burg .menu li {
+  background-color: white;
+  padding: 10px;
+}
+
+.burg .menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ .menu {
+  display: block;
+}
+
+/*******************
+hamburger end
+********************/
+
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(../img/background-main.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  
+}
+
+.main .landing, .main .landing-bottom{
+  padding-left: 10%;
+}
+
+.landing h1{
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+.landing p{
+  color: white;
+  text-transform: uppercase;
+  text-shadow: .5px .5px 1px black;
+  padding: 1rem 0;
+}
+
+.container, .container-alt, .container-little, .container-med, .offer .sale{
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+
+  background-color: black;
+  height: 2rem;
+  width: fit-content;
+}
+
+.container a{
+  color: white;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+}
+
+.container-alt{
+  display: flex;
+  justify-content: center;
+
+  background-color: white;
+  height: 2rem;
+  width: fit-content;
+}
+
+.container-alt a{
+  color: black;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+}
+
+.landing-bottom{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.container-med{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: black;
+  height: fit-content;
+  width: fit-content;
+}
+
+.container-med span, .container-med p, .container-med h5{
+  color: white;
+}
+
+.container-med h5{
+  font-weight: 400;
+}
+
+.container-med p{
+  line-height: 1.5;
+  padding: 1.5rem 0;
+}
+
+.container-med p span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info{
+  padding: 5% 16%;
+}
+
+.services{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.services h3{
+font-weight: 400;
+padding-top: 1.2rem;
+padding-bottom: 1rem;
+}
+
+.services-one, .services-two, .services-three{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 28%
+}
+
+.services-one p, .services-two p, .services-three p, .about-more p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about{
+  display: flex;
+  background-color: rgb(243, 244, 246);
+  padding: 3% 15%;
+}
+
+.about-more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
+  width: 50%;
+}
+
+.about-more h2{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about-more p{
+  padding: 1rem 0;
+}
+.dog-pic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  width: 50%;
+}
+
+.res-pups{
+  padding: 3rem 15% 5rem 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.res-pups h3, .adventure-pics h3{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.res-pups .border, .adventure-pics .border{
+  width: 4rem;
+  border-bottom: 3px solid black;
+  margin-bottom: 2.5rem;
+}
+
+.resident-pups{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resident-pups .pup-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.pup-info img{
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.container-little{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  height: 4rem;
+  width: 12rem;
+}
+
+.container-little span{
+  color: white;
+  text-align: center;
+}
+
+.offer{
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../img/corgi2.jpg);
+  background-position: bottom ;
+  background-size: cover;
+  
+  height: 20rem;
+  margin: 0 15%;
+}
+
+.sale{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.sale h6{
+  font-weight: 400;
+}
+
+.sale p{
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.sale p span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.adventure-pics{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 15% 0 15%;
+}
+
+.adventure-pics .gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.adventure-pics .gallery .box{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.adventure-pics .gallery .box img{
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.adventure-pics .btn{
+  margin-bottom: 2rem;
+}
+
+.adventure-pics .btn a{
+  padding: 0.94rem 1.8rem;
+  border-radius: 0.2rem;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+
+footer {
+  width: 100%;
+  background-color: rgb(243, 244, 245); 
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer .logo-footer{
+  width: 30%;
+}
+footer .footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-top .footer-section-left{
+  width: 35%;
+}
+
+.footer-section-left a{
+  color: black;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-section-left p{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 1rem;
+}
+
+footer .footer-top .footer-h3{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .footer-top .footer-section-right{
+  width: 35%;
+}
+
+footer .footer-top .footer-section-right .form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 3rem;
+}
+
+footer .footer-top .footer-section-right .form input{
+  height: 3rem;
+  padding: 1rem;
+  width: 70%;
+  border: 1.5px solid rgb(158, 158, 158);
+  border-radius: 0.2rem;
+}
+
+footer .footer-top .footer-section-right .form a{
+  padding: 0.94rem 1.8rem;
+  border-radius: 0.2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: black;
+  width: max-content;
+}
+
+footer .footer-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  
+}
+
+footer .footer-bottom p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer .footer-bottom .social-two{
+  display: flex;
+  padding-left: 0;
+}
+
+footer .footer-bottom .social-two li{
+  list-style-type: none;
+  padding: 1rem;
+}
+
+footer .footer-bottom .social-two li a{
+  color: black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* hide hamburger & logo on full screen */
+@media screen and (min-width:905px){
+  .burg{
+   display: none;
+   }
+   .landing .logo{
+     display: none;
+   }
+ }
+
+@media screen and (max-width:904px){
+  /* hide menu nav */
+  .pages, .booking a{
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* make adventure section pic above */
+  .about{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 5%;
+  }
+  .dog-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 60%;
+  }
+
+  /* make resident pups stack */
+  .resident-pups{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pup-info img{
+    padding-top: .5rem;
+  }
+
+  /* make footer stack */
+  footer .footer-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  footer .footer-top .footer-section-left{
+    width: 100%;
+  }
+  footer .footer-top .footer-section-right{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:505px) {
+  .landing h1{
+    font-size: 2.75rem;
+  }
+}
