@@ -1,9 +1,10 @@
 # Adventures in DoggySitting
-A concept site for a dog walking and daycare business.
+A concept site for a dog walking and pet sitting business.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+**Link to project:** https://adventures-in-doggysitting.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](img/screenshot-dog.png)
+![alt tag](img/screenshot-dog2.png)
 
 ## How It's Made:
 
